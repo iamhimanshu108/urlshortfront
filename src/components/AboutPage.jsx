@@ -1,22 +1,26 @@
 import React from "react";
-import { FaLink, FaShareAlt, FaEdit, FaChartLine } from "react-icons/fa";
+import {
+  FaLink,
+  FaShareAlt,
+  FaEdit,
+  FaChartLine,
+  FaShieldAlt,
+  FaUserShield,
+  FaSyncAlt,
+} from "react-icons/fa";
+
 const AboutPage = () => {
   return (
     <div className="lg:px-14 sm:px-8 px-5 min-h-[calc(100vh-64px)] pt-2">
-      <div className="bg-white w-full sm:py-10 py-8  ">
-        <h1 className="sm:text-4xl text-slate-800 text-3xl font-bold italic  mb-3">
-          About Linklytics
+      <div className="bg-white w-full sm:py-10 py-8">
+        <h1 className="sm:text-4xl text-slate-800 text-3xl font-bold italic mb-3">
+          About Link-Shortner
         </h1>
-        <p className="text-gray-700 text-sm  mb-8 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full ">
-          Linklytics simplifies URL shortening for efficient sharing. Easily
-          generate, manage, and track your shortened links. Linklytics simplifies
-          URL shortening for efficient sharing. Easily generate, manage, and
-          track your shortened links. Linklytics simplifies URL shortening for
-          efficient sharing. Easily generate, manage, and track your shortened
-          links. Linklytics simplifies URL shortening for efficient sharing.
-          Easily generate, manage, and track your shortened links.
+        <p className="text-gray-700 text-sm mb-8 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full">
+          Link-Shortner simplifies URL shortening for efficient sharing. Easily
+          generate, manage, and track your shortened links.
         </p>
-        <div className="space-y-5 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full ">
+        <div className="space-y-5 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full">
           <div className="flex items-start">
             <FaLink className="text-blue-500 text-3xl mr-4" />
             <div>
@@ -66,6 +70,45 @@ const AboutPage = () => {
                 Enjoy lightning-fast redirects and high uptime with our reliable
                 infrastructure. Your shortened URLs will always be available and
                 responsive, ensuring a seamless experience for your users.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <FaShieldAlt className="text-yellow-500 text-3xl mr-4" />
+            <div>
+              <h2 className="sm:text-2xl font-bold text-slate-800">
+                Customizable Links
+              </h2>
+              <p className="text-gray-600">
+                Personalize your shortened URLs with custom aliases to make them
+                more memorable and brand-friendly. Stand out with unique links
+                that reflect your identity.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <FaUserShield className="text-indigo-500 text-3xl mr-4" />
+            <div>
+              <h2 className="sm:text-2xl font-bold text-slate-800">
+                User Management
+              </h2>
+              <p className="text-gray-600">
+                Manage multiple users and permissions with ease. Our platform
+                supports team collaboration, allowing you to share access and
+                manage links collectively.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <FaSyncAlt className="text-teal-500 text-3xl mr-4" />
+            <div>
+              <h2 className="sm:text-2xl font-bold text-slate-800">
+                API Integration
+              </h2>
+              <p className="text-gray-600">
+                Integrate our URL shortening service into your own applications
+                with our powerful API. Automate link generation and management
+                to streamline your workflows.
               </p>
             </div>
           </div>
